@@ -22,7 +22,7 @@ ansible-playbook playbooks/phpnode.yml --ask-pass --ask-sudo-pass -l php
 ```
 #!bash
 
-ansible-playbook playbooks/nginx.yml --ask-pass --ask-sudo-pass -l nginx  --extra-vars '{"bservers":"server php-0;\n\tserver php-1;\n\tserver php-2"}'
+ansible-playbook playbooks/nginx.yml --ask-pass --ask-sudo-pass -l nginx  --extra-vars '{"bservers":"server php-0;\n\tserver php-1;\n\tserver php-2;"}'
 ```
 
 ЗЫ: часть взято из своих рабочих ролей часть нагуглено и переделано
