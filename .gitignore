@@ -1,0 +1,6 @@
+# ALL
+*~
+/logs/*
+!/logs
+/tmp
+#EOF
