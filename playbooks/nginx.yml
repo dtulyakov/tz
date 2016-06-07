@@ -1,0 +1,6 @@
+- name: Play nginx
+  hosts: all
+  remote_user: ubuntu
+  sudo: yes
+  roles: 
+     - { role: nginx }

@@ -1,0 +1,16 @@
+#
+---
+- name: Update apt cache
+  apt: update_cache=yes
+
+- name: Install required packages
+  apt: pkg={{ item }} state=latest
+  with_items:
+    - ruby
+    - lxc
+
+- copy: src={{ item.src }} dest=/root/{{ item.dest }} mode=0700
+  with_items:
+    - { src: 'lxc.rb', dest: 'lxc.rb' }
+
+- command: /root/lxc.rb >> lxcrb.log

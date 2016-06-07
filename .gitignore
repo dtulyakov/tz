@@ -1,6 +1,6 @@
 # ALL
 *~
-/logs/*
+/logs/*.log
 !/logs
 /tmp
 #EOF
